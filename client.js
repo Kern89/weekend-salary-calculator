@@ -1,17 +1,45 @@
 console.log('Hello World!');
 
-// variables to select data from form
-let fName = 
+
 // variable to select emplopyee table
 let empTable = document.querySelector('#tableBody');
 
 // to populate empTable with new employee data
-empTable.innerHTML += `
-    <tr>
-        <td>${}</td>
-        <td>${}</td>
-        <td>${}</td>
-        <td>${}</td>
-        <td>${}</td>
-    </tr>
-`
+function submitForm(event) {
+    event.preventDefault();
+
+    // variables to select data from form
+    let fName = document.querySelector('#fNameData').value;
+    let lName = document.querySelector('#lNameData').value;
+    let idData = document.querySelector('#idData').value;
+    let title = document.querySelector('#titleData').value;
+    let salary = document.querySelector('#salaryData').value;
+
+    // .innerHTML portion of function
+    empTable.innerHTML += `
+        <tr>
+            <td>${fName}</td>
+            <td>${lName}</td>
+            <td>${idData}</td>
+            <td>${title}</td>
+            <td>${salary}</td>
+            <td><button onClick="deleteEmp(event)">Delete</button></td>
+        </tr>
+    `
+    monthSal(event);
+    totalMonthly.innerHTML =`Total Monthly: $${totMonth}`;
+    document.getElementById('employeeForm').reset();
+}
+
+// updating total monthly cost
+let totMonth = 0;
+let totalMonthly = document.querySelector('#monthTotal');
+function monthSal(event) {
+    totMonth += event.target.querySelector('#salaryData').value / 12;
+}
+
+
+//function to remove employee
+function deleteEmp(event) {
+    event.target.parentElement.parentElement.remove();
+}
