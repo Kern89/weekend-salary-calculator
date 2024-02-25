@@ -1,4 +1,7 @@
 
+body {
+    font-family: verdana, sans-serif;
+}
 form {
     border: 2px solid;
     padding: 25px;
@@ -6,11 +9,9 @@ form {
     border-radius: 15px;
     display: inline-block;
 }
-input {
-    flex: ;
-}
 table, tr, thead{
-    table-layout: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
     border: 1px solid;
     width: 75%;
 }
