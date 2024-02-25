@@ -29,6 +29,9 @@ function submitForm(event) {
     monthSal(event);
     totalMonthly.innerHTML =`Total Monthly: $${totMonth}`;
     document.getElementById('employeeForm').reset();
+
+    // to check if over budget 
+    
 }
 
 // updating total monthly cost
@@ -37,7 +40,6 @@ let totalMonthly = document.querySelector('#monthTotal');
 function monthSal(event) {
     totMonth += event.target.querySelector('#salaryData').value / 12;
 }
-
 
 //function to remove employee
 function deleteEmp(event) {
