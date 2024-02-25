@@ -17,7 +17,7 @@ function submitForm(event) {
 
     // .innerHTML portion of function
     empTable.innerHTML += `
-        <tr>
+        <tr id="tabRow">
             <td>${fName}</td>
             <td>${lName}</td>
             <td>${idData}</td>
@@ -31,8 +31,15 @@ function submitForm(event) {
     document.getElementById('employeeForm').reset();
 
     // to check if over budget 
-    
+    if (totMonth > 20000) {
+        totalMonthly.setAttribute('class', 'overBudget');
+        //change this to tell by how much over the budget?
+        totalMonthly.innerHTML += `
+        <p class="overBudget">Warning you are over your $20,000 budget!</p>
+        `
+    }
 }
+
 
 // updating total monthly cost
 let totMonth = 0;

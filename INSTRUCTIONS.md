@@ -15,7 +15,7 @@ The weekend assignments in Tier 2 are different than what we've been doing so fa
     * The footer's total monthly cost should be updated.
     * The form inputs should be cleared out.
 
-* If the total monthly cost **exceeds $20,000**, apply an `over-budget` CSS class to the footer element.
+* [X]If the total monthly cost **exceeds $20,000**, apply an `over-budget` CSS class to the footer element.
     * When applied, this CSS class should provide a clear visual indication that the monthly cost has been exceeded. (This could be as simple as turning the footer text red.)
 
 * [X]Create a "Delete" button that removes an employee from the DOM.

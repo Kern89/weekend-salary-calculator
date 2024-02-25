@@ -1,5 +1,38 @@
 
-
+form {
+    border: 2px solid;
+    padding: 25px;
+    background-color: #B8C6C4;
+    border-radius: 15px;
+    display: inline-block;
+}
+input {
+    flex: ;
+}
+table, tr, thead{
+    table-layout: auto;
+    border: 1px solid;
+    width: 75%;
+}
+td {
+    border: 1px solid;
+    text-align: center;
+    margin: 0;
+}
+thead {
+    border: 1px solid;
+}
+#formDiv {
+    text-align: center;
+}
+#employeeHeader {
+    margin-top: 0;
+}
+#tabRow:hover {
+    background-color: #A7CDD2;
+}
 .overBudget {
     color: red;
+    font-weight: bold;
 }
+

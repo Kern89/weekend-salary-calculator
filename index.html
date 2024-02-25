@@ -11,15 +11,18 @@
     <h1>Salary Calculator</h1>
   </header>
   <main>
-    <h2>Add Employee</h2>
+    <div id="formDiv">
     <form onsubmit="submitForm(event)" id="employeeForm">
+    <h2 id="employeeHeader">Add Employee:</h2>
+    <br>
     <input data-testid="firstNameInput" id="fNameData" placeholder="First Name" required/>
     <input data-testid="lastNameInput" id="lNameData" placeholder="Last Name" required/>
     <input data-testid="idInput" id="idData" placeholder="ID" required/>
     <input data-testid="titleInput" id="titleData" placeholder="Title" required/>
     <input data-testid="annualSalaryInput" id="salaryData" placeholder="Annual Salary" type="number" required/>
-    <input type="submit" />
+    <input id="submit" type="submit" />
     </form>
+    </div>
     <h2>Employees</h2>
     <table id="employeeTable">
         <thead>
@@ -29,6 +32,7 @@
             <th>ID</th>
             <th>Title</th>
             <th>Salary</th>
+            <th></th>
           </tr>
         </thead>
         <tbody id="tableBody">
