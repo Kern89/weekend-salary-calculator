@@ -2,6 +2,9 @@
 body {
     font-family: verdana, sans-serif;
 }
+h1 {
+    justify-content: center;
+}
 form {
     border: 2px solid;
     padding: 25px;
@@ -10,6 +13,7 @@ form {
     display: inline-block;
 }
 table, tr, thead{
+    background-color: #B8C6C4;
     table-layout: fixed;
     border-collapse: collapse;
     border: 1px solid;
@@ -20,14 +24,17 @@ td {
     text-align: center;
     margin: 0;
 }
-thead {
-    border: 1px solid;
-}
 #formDiv {
     text-align: center;
 }
+#employeeTable {
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
 #employeeHeader {
     margin-top: 0;
+    justify-content: center;
 }
 #tabRow:hover {
     background-color: #A7CDD2;
@@ -36,4 +43,11 @@ thead {
     color: red;
     font-weight: bold;
 }
-
+#employees {
+    text-decoration: underline;
+    text-align: center;
+}
+.budget {
+    margin-left: 70%;
+    font-weight: bold;
+}

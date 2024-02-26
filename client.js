@@ -34,9 +34,10 @@ function submitForm(event) {
     if (totMonth > 20000) {
         totalMonthly.setAttribute('class', 'overBudget');
         //change this to tell by how much over the budget?
-        totalMonthly.innerHTML += `
-        <p class="overBudget">Warning you are over your $20,000 budget!</p>
-        `
+        // totalMonthly.innerHTML += `
+        // <p class="overBudget">Warning you are over your $20,000 budget!</p>
+        // `
+        alert('Warning you are over your $20,000 budget!');
     }
 }
 
