@@ -37,7 +37,10 @@ function submitForm(event) {
         // totalMonthly.innerHTML += `
         // <p class="overBudget">Warning you are over your $20,000 budget!</p>
         // `
-        alert('Warning you are over your $20,000 budget!');
+        alert(`Warning you are over ${overBudgetBy(20000)} budget!`);
+    }
+    function overBudgetBy(budget) {
+        return totMonth - budget
     }
 }
 
